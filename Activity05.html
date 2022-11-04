@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Polymorphism</title>   
+     <script type='text/javascript' src="script.js"></script>
+    </head>
+    <body>
+        <script>
+            class brandA
+            {
+                display(){
+                    document.writeln("Brand A: Toyota <br>");
+                }
+            }
+
+            class brandB extends brandA{
+                display()
+                {
+                   document.writeln("Brand B: Honda");     
+                }
+            } 
+
+            var a= [new brandA(), new brandB()]
+            a.forEach(function(msg){
+                msg.display();
+            });
+        </script>
+    </body>
+</html>

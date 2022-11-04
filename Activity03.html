@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Encapsulation</title>   
+     <script type='text/javascript' src="script.js"></script>
+    </head>
+    <body>
+        <script>
+                class myRide
+                {
+                    constructor()
+                    {
+                    var brand;
+                    var variant;
+                }
+
+                getName(){
+                    return this.brand;
+                }
+
+                setName(brand){
+                    return this.brand=brand;
+                }
+
+                getVariant(){
+                    return this.variant;
+                }
+
+                setVariant(variant){
+                    return this.variant=variant;
+                }
+                }
+
+                var Rides = new myRide();
+
+                Rides.setName('Toyota');
+                Rides.setVariant('Wigo');
+
+                alert(Rides.getName()+ " " + Rides.getVariant());
+        </script>
+    </body>
+</html>
